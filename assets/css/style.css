@@ -1,0 +1,329 @@
+:root {
+    color-scheme: light;
+    font-family: Inter, "Segoe UI", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #f8f8f6;
+    color: #20201e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.conteneur {
+    width: min(760px, calc(100% - 40px));
+    margin: 64px auto;
+}
+
+header {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #deded8;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+h2 {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.intro {
+    margin: 0;
+    color: #77776f;
+    font-size: 0.95rem;
+}
+
+.conteneur-exercice {
+    width: min(860px, calc(100% - 40px));
+}
+
+.page-exercice header {
+    margin-bottom: 32px;
+    padding: 24px 28px 28px;
+    border: 1px solid #deded8;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.page-exercice header p:first-child {
+    margin: 0 0 24px;
+}
+
+.page-exercice header p:first-child a {
+    color: #4d5f4d;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.page-exercice header p:first-child a:hover {
+    text-decoration: underline;
+}
+
+.page-exercice .exercice {
+    display: block;
+    padding: 28px;
+    border: 1px solid #deded8;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.page-exercice .exercice h2 {
+    margin-bottom: 20px;
+    color: #77776f;
+}
+
+.page-exercice .actions {
+    justify-content: flex-start;
+}
+
+.page-exercice button {
+    border-color: #c9c9c0;
+    background: #f8f8f6;
+}
+
+.page-exercice button:hover {
+    border-color: #20201e;
+    background: #20201e;
+}
+
+.page-exercice .resultat-section {
+    margin-top: 28px;
+    padding: 24px 28px;
+    border: 1px solid #deded8;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.page-exercice #resultat {
+    border-left: 3px solid #8a5c3d;
+    border-radius: 4px;
+    background: #f8f8f6;
+}
+
+.conteneur-garde {
+    width: min(820px, calc(100% - 40px));
+}
+
+.entete-garde {
+    margin-bottom: 36px;
+    padding: 28px 32px 32px;
+    border: 1px solid #deded8;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.badge-tp {
+    margin: 0 0 20px;
+    color: #8a5c3d;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.liste-exercices h2 {
+    margin-bottom: 14px;
+    color: #77776f;
+}
+
+.cartes-exercices {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cartes-exercices li {
+    border: 1px solid #e2e2dc;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cartes-exercices li:hover {
+    border-color: #20201e;
+    box-shadow: 0 8px 20px rgba(32, 32, 30, 0.06);
+    transform: translateY(-2px);
+}
+
+.cartes-exercices a {
+    display: grid;
+    grid-template-columns: 42px 1fr auto;
+    align-items: center;
+    gap: 14px;
+    min-height: 58px;
+    padding: 10px 16px;
+    color: #20201e;
+    text-decoration: none;
+}
+
+.numero-carte {
+    color: #aaa99f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.9rem;
+}
+
+.fleche-carte {
+    color: #8a5c3d;
+    font-size: 1.15rem;
+    transition: transform 0.2s ease;
+}
+
+.cartes-exercices a:hover .fleche-carte {
+    transform: translateX(4px);
+}
+
+.lien-documentation {
+    display: inline-block;
+    margin-top: 28px;
+    color: #4d5f4d;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.lien-documentation:hover {
+    text-decoration: underline;
+}
+
+.lien-documentation span {
+    margin-left: 4px;
+}
+
+.exercice {
+    display: grid;
+    grid-template-columns: 44px 210px 1fr;
+    align-items: start;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e2dc;
+}
+
+.numero {
+    color: #aaa99f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.9rem;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+button {
+    min-height: 36px;
+    border: 1px solid #d7d7d0;
+    border-radius: 999px;
+    padding: 8px 13px;
+    background: transparent;
+    color: #343431;
+    font: inherit;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+    border-color: #20201e;
+    background: #20201e;
+    color: #ffffff;
+}
+
+button:focus-visible {
+    outline: 2px solid #20201e;
+    outline-offset: 2px;
+}
+
+.resultat-section {
+    margin-top: 48px;
+}
+
+.resultat-section h2 {
+    margin-bottom: 14px;
+    color: #77776f;
+}
+
+#resultat {
+    min-height: 80px;
+    padding: 16px;
+    border-left: 2px solid #20201e;
+    background: transparent;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.variable {
+    color: #4d5f4d;
+    font-weight: 700;
+}
+
+.valeur {
+    color: #8a5c3d;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .conteneur {
+        width: min(100% - 20px, 960px);
+        margin: 20px auto;
+    }
+
+    header {
+        margin-bottom: 24px;
+    }
+
+    .exercice {
+        grid-template-columns: 32px 1fr;
+    }
+
+    .entete-garde {
+        padding: 22px 20px 24px;
+    }
+
+    .conteneur-garde {
+        width: min(100% - 20px, 960px);
+    }
+
+    .conteneur-exercice {
+        width: min(100% - 20px, 960px);
+    }
+
+    .page-exercice header,
+    .page-exercice .exercice,
+    .page-exercice .resultat-section {
+        padding: 20px;
+    }
+
+    .actions {
+        grid-column: 1 / -1;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+    }
+}

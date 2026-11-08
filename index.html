@@ -3,79 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercices JavaScript</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>TP2 - JavaScript fondamental</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <main class="conteneur">
-        <header>
-            <h1>Mes exercices JavaScript</h1>
-            <p class="intro">Sélectionnez une question pour afficher son résultat.</p>
+<body class="page-garde">
+    <main class="conteneur conteneur-garde">
+        <header class="entete-garde">
+            <p class="badge-tp">TP 02 · JavaScript</p>
+            <h1>TP2 - JavaScript fondamental</h1>
+            <p class="intro">Variables, types, opérateurs, conditions, switch, boucles et simulation de mot de passe.</p>
         </header>
-
-        <section class="exercice">
-            <span class="numero">01</span>
-            <h2>Variables et types</h2>
-            <div class="actions">
-                <button type="button" onclick="exo1q1()">Question 1</button>
-                <button type="button" onclick="exo1q2()">Question 2</button>
-            </div>
+        <section class="liste-exercices">
+            <h2>Exercices</h2>
+            <ol class="cartes-exercices">
+                <li><a href="exercices/00-Initialisation/index.html"><span class="numero-carte">00</span><span>Initialisation</span><span class="fleche-carte">→</span></a></li>
+                <li><a href="exercices/01-Variables-et-types/index.html"><span class="numero-carte">01</span><span>Variables et types</span><span class="fleche-carte">→</span></a></li>
+                <li><a href="exercices/02-Operateurs-et-comparaisons/index.html"><span class="numero-carte">02</span><span>Opérateurs et comparaisons</span><span class="fleche-carte">→</span></a></li>
+                <li><a href="exercices/03-Structures-conditionnelles/index.html"><span class="numero-carte">03</span><span>Structures conditionnelles</span><span class="fleche-carte">→</span></a></li>
+                <li><a href="exercices/04-Switch/index.html"><span class="numero-carte">04</span><span>Switch</span><span class="fleche-carte">→</span></a></li>
+                <li><a href="exercices/05-Boucles/index.html"><span class="numero-carte">05</span><span>Boucles</span><span class="fleche-carte">→</span></a></li>
+                <li><a href="exercices/06-Simulation-mot-de-passe/index.html"><span class="numero-carte">06</span><span>Simulation de mot de passe</span><span class="fleche-carte">→</span></a></li>
+            </ol>
         </section>
-
-        <section class="exercice">
-            <span class="numero">02</span>
-            <h2>Opérateurs et comparaisons</h2>
-            <div class="actions">
-                <button type="button" onclick="exo2q1()">Question 1</button>
-                <button type="button" onclick="exo2q2()">Question 2</button>
-            </div>
-        </section>
-
-        <section class="exercice">
-            <span class="numero">03</span>
-            <h2>Structures conditionnelles</h2>
-            <div class="actions">
-                <button type="button" onclick="exo3q1()">Question 1 - Vérification âge</button>
-                <button type="button" onclick="exo3q2()">Question 2 - Âge et pays</button>
-                <button type="button" onclick="exo3q3()">Question 3 - Note et appréciation</button>
-                <button type="button" onclick="exo3q4()">Question 4 - Gestion des erreurs</button>
-            </div>
-        </section>
-
-        <section class="exercice">
-            <span class="numero">04</span>
-            <h2>Structure switch</h2>
-            <div class="actions">
-                <button type="button" onclick="exo4q1()">Question 1 - Nombre et jour</button>
-                <button type="button" onclick="exo4q2()">Question 2 - Jour suivant</button>
-            </div>
-        </section>
-
-        <section class="exercice">
-            <span class="numero">05</span>
-            <h2>Boucles</h2>
-            <div class="actions">
-                <button type="button" onclick="exo5q1()">Question 1 - Nombres de 1 à 10</button>
-                <button type="button" onclick="exo5q2()">Question 2 - Nombres pairs</button>
-                <button type="button" onclick="exo5q3()">Question 3 - Factorielle</button>
-            </div>
-        </section>
-
-        <section class="exercice">
-            <span class="numero">06</span>
-            <h2>Simulation de mot de passe</h2>
-            <div class="actions">
-                <button type="button" onclick="exo6q1()">Question 1 - Mot de passe</button>
-                <button type="button" onclick="exo6q2()">Question 2 - Limite de 3 essais</button>
-            </div>
-        </section>
-
-        <section class="resultat-section">
-            <h2>Résultat</h2>
-            <div id="resultat" aria-live="polite">Sélectionnez une question pour afficher le résultat.</div>
-        </section>
+        <a class="lien-documentation" href="README.md">Consulter la documentation <span>↗</span></a>
     </main>
-
-    <script type="module" src="js/main.js"></script>
 </body>
 </html>
